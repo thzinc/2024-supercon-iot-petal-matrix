@@ -34,10 +34,13 @@ async def apply_led(client, row, col):
 
     led_rows[r] |= mask
     print(bin(led_rows[r]))
+    
+    petal_bus.writeto_mem(PETAL_ADDRESS, row, bytes([led_rows[r]]))
     await publish_led_row(client, row, led_rows[r])
     await asyncio.sleep(2)
 
     led_rows[r] &= 0b111111 ^ mask
+    petal_bus.writeto_mem(PETAL_ADDRESS, row, bytes([led_rows[r]]))
     print(bin(led_rows[r]))
     await publish_led_row(client, row, led_rows[r])
     
