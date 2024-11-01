@@ -1,0 +1,17 @@
+.spiral-led {
+  fill: gray;
+  stroke-width: 100px;
+  stroke: rgba(0, 0, 0, 0);
+}
+
+.spiral-led.active {
+  fill: white;
+}
+
+.center-led {
+  fill: gray;
+}
+
+.center-led.active {
+  fill: white;
+}

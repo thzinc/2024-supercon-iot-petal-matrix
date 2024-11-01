@@ -1,1 +1,70 @@
-Hello world
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/main.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="TBD" />
+    <meta name="fediverse:creator" content="https://hachyderm.io/@thzinc" />
+    <meta name="keywords" content="TBD" />
+    <meta name="language" content="en-US" />
+    <meta name="og:description" content="TBD" />
+    <meta name="og:title" content="IoT Petal Matrix" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="TBD" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <script
+      defer
+      data-domain="TBD"
+      src="https://plausible.io/js/script.outbound-links.js"
+    ></script>
+    <title>IoT Petal Matrix</title>
+    <script
+      type="application/javascript"
+      src="https://cdn.jsdelivr.net/npm/mqtt@5.10.1/dist/mqtt.min.js"
+    ></script>
+    <script type="application/javascript" src="/main.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <header>IoT Petal Matrix</header>
+      <object
+        id="petal-matrix"
+        data="petal-matrix.svg"
+        type="image/svg+xml"
+      ></object>
+      <footer>
+        <span> MQTT: <span id="mqtt-status">?</span></span>
+        <span>
+          Device: <button id="device-id">?</button>
+          <span id="device-status">?</span></span
+        >
+      </footer>
+    </main>
+    <!--
+    <footer style="text-align: center;">
+      <p>
+        Made by
+        <a href="https://thzinc.com">thzinc</a>
+      </p>
+      <a href="https://thzinc.com">
+        <img
+          src="https://secure.gravatar.com/avatar/eaeac922b9f3cc9fd18cb9629b9e79f6?s=128"
+          alt="Avatar of Daniel James a.k.a. thzinc"
+          style="max-width: 64px"
+        />
+      </a>
+
+      <p>
+        Powered by
+        <a href="https://glitch.com/~hackaday-supercon-2024-ical">Glitch</a>
+      </p>
+
+    </footer>
+    -->
+  </body>
+</html>
