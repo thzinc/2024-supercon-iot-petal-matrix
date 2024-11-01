@@ -4,12 +4,14 @@ Demo to show using MQTT to communicate between a web interface and the Raspberry
 
 ## Quickstart
 
-Eventually
-
-## Building
-
 1. Copy the contents of [`badge`](./badge/) to the Pico.
 2. Update [`constants.py`](./badge/constants.py) as is relevant
+   - Set the `WIFI_SSID` and `WIFI_PASSWORD` to connect to your wifi network
+   - (Optional) If you want to use a different MQTT broker, set `MQTT_HOST` as you see fit
+   - Set the `DEVICE_ID` to something unique (play nice if you're using a public MQTT broker)
+3. Go to https://thzinc.com/2024-supercon-iot-petal-matrix/ and click the button next to "Device" and type in the name you used for `DEVICE_ID`
+
+## Building
 
 ## Code of Conduct
 
