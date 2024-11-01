@@ -84,7 +84,7 @@ async def messages(client):
     async for topic, msg, retained in client.queue:
         (request_type, row, col) = unpack("BBB", msg)
         if request_type == REQUEST_TYPE_TOUCH:
-            if 0 < row and row < 8 and col < 8:
+            if 0 < row and row <= 8 and col <= 7:
                 asyncio.create_task(apply_led(client, row, col))
 
 
