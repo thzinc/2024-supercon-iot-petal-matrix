@@ -10,7 +10,6 @@ config["wifi_pw"] = WIFI_PASSWORD
 config["server"] = MQTT_HOST
 
 TOPIC_PREFIX = "thzinc/2024-supercon/" + DEVICE_ID
-print("Using " + TOPIC_PREFIX)
 
 led_rows = [
     0b0000000,
@@ -40,7 +39,7 @@ async def apply_led(client, row, col):
 
     await asyncio.sleep(2)
 
-    led_rows[r] &= 0b111111 ^ mask
+    led_rows[r] &= 0b1111111 ^ mask
     petal_bus.writeto_mem(PETAL_ADDRESS, row, bytes([led_rows[r]]))
     led_changed = True
 
@@ -85,9 +84,8 @@ async def messages(client):
     async for topic, msg, retained in client.queue:
         (request_type, row, col) = unpack("BBB", msg)
         if request_type == REQUEST_TYPE_TOUCH:
-            if row > 8 or col > 7:
-                pass
-            asyncio.create_task(apply_led(client, row, col))
+            if 0 < row and row < 8 and col < 8:
+                asyncio.create_task(apply_led(client, row, col))
 
 
 async def up(client):
