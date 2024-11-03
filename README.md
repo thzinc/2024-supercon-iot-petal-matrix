@@ -23,7 +23,7 @@ We welcome contributions and collaboration on this project. Please read our [con
 
 ## License and Authors
 
-[![Daniel James logo](https://secure.gravatar.com/avatar/645145afc5c0bc24ba24c3d86228ad39?size=16) Daniel James](https://thzinc.com)
+[![Daniel James logo](https://secure.gravatar.com/avatar/eaeac922b9f3cc9fd18cb9629b9e79f6.png?size=16)) Daniel James](https://thzinc.com)
 
 [![license](https://img.shields.io/github/license/thzinc/2024-supercon-iot-petal-matrix.svg)](https://github.com/thzinc/2024-supercon-iot-petal-matrix/blob/master/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/thzinc/2024-supercon-iot-petal-matrix.svg)](https://github.com/thzinc/2024-supercon-iot-petal-matrix/graphs/contributors)
